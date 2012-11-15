@@ -1,0 +1,263 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FD7D64416551EEC007BCE2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7D64316551EEC007BCE2C /* Foundation.framework */; };
+		8FD7D64916551EEC007BCE2C /* StaticLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8FD7D64816551EEC007BCE2C /* StaticLibrary.h */; };
+		8FD7D64B16551EEC007BCE2C /* StaticLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7D64A16551EEC007BCE2C /* StaticLibrary.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8FD7D63E16551EEC007BCE2C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SRCROOT)/lib/include";
+			dstSubfolderSpec = 0;
+			files = (
+				8FD7D64916551EEC007BCE2C /* StaticLibrary.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8FD7D64016551EEC007BCE2C /* libStaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FD7D64316551EEC007BCE2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8FD7D64716551EEC007BCE2C /* StaticLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StaticLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		8FD7D64816551EEC007BCE2C /* StaticLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticLibrary.h; sourceTree = "<group>"; };
+		8FD7D64A16551EEC007BCE2C /* StaticLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticLibrary.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FD7D63D16551EEC007BCE2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD7D64416551EEC007BCE2C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FD7D63516551EEC007BCE2C = {
+			isa = PBXGroup;
+			children = (
+				8FD7D64516551EEC007BCE2C /* StaticLibrary */,
+				8FD7D64216551EEC007BCE2C /* Frameworks */,
+				8FD7D64116551EEC007BCE2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FD7D64116551EEC007BCE2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FD7D64016551EEC007BCE2C /* libStaticLibrary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FD7D64216551EEC007BCE2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FD7D64316551EEC007BCE2C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FD7D64516551EEC007BCE2C /* StaticLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				8FD7D64816551EEC007BCE2C /* StaticLibrary.h */,
+				8FD7D64A16551EEC007BCE2C /* StaticLibrary.m */,
+				8FD7D64616551EEC007BCE2C /* Supporting Files */,
+			);
+			path = StaticLibrary;
+			sourceTree = "<group>";
+		};
+		8FD7D64616551EEC007BCE2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FD7D64716551EEC007BCE2C /* StaticLibrary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FD7D63F16551EEC007BCE2C /* StaticLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FD7D64E16551EEC007BCE2C /* Build configuration list for PBXNativeTarget "StaticLibrary" */;
+			buildPhases = (
+				8FD7D63C16551EEC007BCE2C /* Sources */,
+				8FD7D63D16551EEC007BCE2C /* Frameworks */,
+				8FD7D63E16551EEC007BCE2C /* CopyFiles */,
+				8FD7D69216551F5B007BCE2C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StaticLibrary;
+			productName = StaticLibrary;
+			productReference = 8FD7D64016551EEC007BCE2C /* libStaticLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FD7D63716551EEC007BCE2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Johannes Schriewer";
+			};
+			buildConfigurationList = 8FD7D63A16551EEC007BCE2C /* Build configuration list for PBXProject "StaticLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8FD7D63516551EEC007BCE2C;
+			productRefGroup = 8FD7D64116551EEC007BCE2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FD7D63F16551EEC007BCE2C /* StaticLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8FD7D69216551F5B007BCE2C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/libStaticLibrary.a",
+			);
+			outputPaths = (
+				"$(SRCROOT)/lib/libStaticLibrary.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"$(dirname \"$SCRIPT_INPUT_FILE_0\")/lib\"\ncp \"$SCRIPT_INPUT_FILE_0\" \"$SCRIPT_OUTPUT_FILE_0\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FD7D63C16551EEC007BCE2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD7D64B16551EEC007BCE2C /* StaticLibrary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8FD7D64C16551EEC007BCE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8FD7D64D16551EEC007BCE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FD7D64F16551EEC007BCE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/StaticLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StaticLibrary/StaticLibrary-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8FD7D65016551EEC007BCE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/StaticLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StaticLibrary/StaticLibrary-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FD7D63A16551EEC007BCE2C /* Build configuration list for PBXProject "StaticLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FD7D64C16551EEC007BCE2C /* Debug */,
+				8FD7D64D16551EEC007BCE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FD7D64E16551EEC007BCE2C /* Build configuration list for PBXNativeTarget "StaticLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FD7D64F16551EEC007BCE2C /* Debug */,
+				8FD7D65016551EEC007BCE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FD7D63716551EEC007BCE2C /* Project object */;
+}

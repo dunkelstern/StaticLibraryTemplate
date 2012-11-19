@@ -10,4 +10,12 @@
 
 @implementation StaticLibrary
 
+- (id)init {
+    self = [super init];
+    if (self) {
+        _aNumber = 42;
+    }
+    return self;
+}
+
 @end

@@ -10,4 +10,8 @@
 
 @interface StaticLibrary : NSObject
 
+- (id)init;
+
+@property (nonatomic, assign) NSUInteger aNumber;
+
 @end

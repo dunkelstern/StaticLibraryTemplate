@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "StaticLibrary.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    StaticLibrary *lib = [[StaticLibrary alloc] init];
+    NSLog(@"Default value: %d", [lib aNumber]);
+    [lib setANumber:23];
+    NSLog(@"Modified value: %d", [lib aNumber]);
+
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

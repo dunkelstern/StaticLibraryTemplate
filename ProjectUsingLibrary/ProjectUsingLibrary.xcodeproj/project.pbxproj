@@ -19,6 +19,7 @@
 		8FD7D67A16551F16007BCE2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7D67916551F16007BCE2C /* ViewController.m */; };
 		8FD7D67D16551F16007BCE2C /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FD7D67B16551F16007BCE2C /* ViewController_iPhone.xib */; };
 		8FD7D68016551F16007BCE2C /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FD7D67E16551F16007BCE2C /* ViewController_iPad.xib */; };
+		8FD7D6AD165A9418007BCE2C /* libStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7D68E16551F21007BCE2C /* libStaticLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,13 @@
 			containerPortal = 8FD7D68616551F21007BCE2C /* StaticLibrary.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8FD7D64016551EEC007BCE2C;
+			remoteInfo = StaticLibrary;
+		};
+		8FD7D6AB165A9412007BCE2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FD7D68616551F21007BCE2C /* StaticLibrary.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FD7D63F16551EEC007BCE2C;
 			remoteInfo = StaticLibrary;
 		};
 /* End PBXContainerItemProxy section */
@@ -57,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD7D6AD165A9418007BCE2C /* libStaticLibrary.a in Frameworks */,
 				8FD7D66116551F16007BCE2C /* UIKit.framework in Frameworks */,
 				8FD7D66316551F16007BCE2C /* Foundation.framework in Frameworks */,
 				8FD7D66516551F16007BCE2C /* CoreGraphics.framework in Frameworks */,
@@ -144,6 +153,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8FD7D6AC165A9412007BCE2C /* PBXTargetDependency */,
 			);
 			name = ProjectUsingLibrary;
 			productName = ProjectUsingLibrary;
@@ -220,6 +230,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FD7D6AC165A9412007BCE2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StaticLibrary;
+			targetProxy = 8FD7D6AB165A9412007BCE2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8FD7D66916551F16007BCE2C /* InfoPlist.strings */ = {
@@ -306,6 +324,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ProjectUsingLibrary/ProjectUsingLibrary-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../StaticLibrary/StaticLibrary";
 				INFOPLIST_FILE = "ProjectUsingLibrary/ProjectUsingLibrary-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -317,6 +336,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ProjectUsingLibrary/ProjectUsingLibrary-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../StaticLibrary/StaticLibrary";
 				INFOPLIST_FILE = "ProjectUsingLibrary/ProjectUsingLibrary-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -342,6 +362,7 @@
 				8FD7D68516551F16007BCE2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
